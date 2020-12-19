@@ -19,7 +19,9 @@ required for the `General_Stereo` notebook.
 
 `General_Stereo.ipynb`: Performs all of the general to parallel stereo rectification 
 Run the cell with the run() function in the General_Stereo.ipynb file (located near the bottom). The default call to run() is shown below:
+```
 run(image_index_0=10, image_index_1=6, calibration_filepath='dino_par.txt', match_method='SURF', threshold=0.9, outlier_bound=1, do_rectify=True, F_method='Direct', suppress_images=False)
+```
 Select two sequencial images -> these images should be named dino0xyz.png where xyz are some digits. These are the image_index_0 and image_index_1. 
 Update the call to run() to point to these image indices.The method for determining the fundamental matrix can be changed with F_method. 
 This value can be "Direct", "Essential", "openCV", or "8point". These correspond to the different fundamental matrix methods described in the report 
